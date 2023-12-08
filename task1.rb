@@ -22,15 +22,6 @@ class ConcreteProduct < AbstractProduct
   end
 end
 
-
-def client_code(factory)
-  product_a = factory.create_product_a
-  product_b = factory.create_product_b
-
-  puts product_b.useful_function_b
-  puts product_b.another_useful_function_b(product_a)
-end
-
 if __FILE__ == $0
   puts 'Testing factory:'
   factory = ConcreteFactory.new
